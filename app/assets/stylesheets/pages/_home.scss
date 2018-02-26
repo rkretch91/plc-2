@@ -25,6 +25,16 @@
 }
 
 .call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: #FF8400 !important;
-  height: 150px;
+  height: 200px;
+  h3 {
+    color: white;
+  }
+  a {
+    color: #FF8400;
+  }
 }
