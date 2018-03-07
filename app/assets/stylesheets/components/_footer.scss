@@ -1,82 +1,51 @@
 .footer {
-  background: #909090;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  background: #58585b;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 210px;
+  padding: 0px 50px;
   color: white;
-  padding: 40px 0 20px 0;
-  align-items: start;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
+.footer-logo-slogan {
+  text-align: center;
+  p {
+    padding-top: 5px;
+    font-style: italic;
+  }
+}
+
+.footer-addt-links {
+  &:last-of-type {
+    margin-right: 30px;
+  }
+  h5 {
+    color: #FF8400;
+  }
+  p {
+    font-size: 14px
+  }
+  padding-left: 20px;
+  line-height: 80%;
+}
+
+.social-icons {
+  color: #FF8400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copywrite {
+  font-size: 10px;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .footer-links {
-  position: absolute;
-  padding-right: 0px;
-  right: 22px;
-}
-
-.footer-links a {
-  color: $red;
-  text-decoration: none;
-  font-size: 30px;
-  padding-left: 24px;
-}
-
-.footer-links a:hover {
-  opacity: 0.8;
-}
-
-.global-greeters, .navigations {
-  align-items: center;
-  text-decoration: none;
-  a {
-    color: white;
-    &:hover {
-      color: $red;
-      text-decoration: none;
-    }
-  }
-}
-
-.donate {
-  text-align: right;
-  font-size: 14px;
-  p {
-    line-height: 0.5em;
-  }
-  .btn-ghost {
-    margin-bottom: 20px;
-    background-color: transparent;
-    color: $red;
-    padding: 10px 40px;
-    display: inline-block;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid white;
-    white-space: nowrap;
-    padding: 10px 40px;
-    font-size: 18px;
-    line-height: 1.428571429;
-    border-radius: 3px;
-    user-select: none;
-    &:hover {
-      background-color: rgba(250,250,250,0.7);
-      text-decoration: none;
-    }
-  }
-}
-.italic {
-  text-decoration: underline;
-}
-.social-icons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
-  margin-top: 1em;
 }
+
