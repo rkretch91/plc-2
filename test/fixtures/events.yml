@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  description: MyText
+  event_date: 2018-03-07
+  event_time_start: 2018-03-07 20:17:42
+  event_time_end: 2018-03-07 20:17:42
+  rsvp_limit: 1
+
+two:
+  event_name: MyString
+  description: MyText
+  event_date: 2018-03-07
+  event_time_start: 2018-03-07 20:17:42
+  event_time_end: 2018-03-07 20:17:42
+  rsvp_limit: 1
