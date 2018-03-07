@@ -1,35 +1,37 @@
 <div class="footer">
-  <div class="navigations">
-    <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "plc-logo.png", height: 25 %>
-    <% end %>
-    <p style="text-align: center;"><em>Community-driven</em></p>
-    <p style="text-align: center;"><em>food events</em></p>
-    <div class="social-icons">
-      <%= link_to 'https://www.facebook.com/ShanghaiGreeters' do %>
-        <i class="fa fa-facebook-square"></i>
-      <% end %>
-      <%= link_to 'https://twitter.com/shanghaigreeter' do %>
-        <i class="fa fa-twitter"></i>
-      <% end %>
-      <%= link_to 'https://www.youtube.com/channel/UCt0dURZ8ANaJpiQ3I2A_pEw/feed?view_as=public' do %>
-        <i class="fa fa-youtube-play"></i>
-      <% end %>
+  <div class="footer-logo-slogan">
+    <%= image_tag "plc-logo.png", height: 100 %>
+    <p><em></em>Community-driven<br>food events</em></p>
+    <div class="social-icons hidden-sm hidden-md hidden-lg hidden-xl" style="width: 117px; margin: auto">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
     </div>
   </div>
-
-  <div class="global-greeters hidden-xs">
-    <p class="italic">Global Greeter Network</p>
-    <p><%= link_to "New York", "https://bigapplegreeter.org/" %></p>
-    <p><%= link_to "Tokyo", "https://tokyogreeter.jimdo.com/" %></p>
-    <p><%= link_to "Paris", "https://greeters.paris/" %></p>
+  <div class="footer-links hidden-xs">
+    <div class="footer-addt-links">
+      <h5>Learn More</h5>
+      <p>About Us</p>
+      <p>FAQ</p>
+    </div>
+    <div class="footer-addt-links">
+      <h5>Get Involved</h5>
+      <p>Attend</p>
+      <p>Host</p>
+      <p>Careers</p>
+      <p>Contact Us</p>
+    </div>
+    <div class="footer-addt-links">
+      <h5>Discover</h5>
+      <p>Events</p>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
   </div>
-
-  <div class="donate hidden-xs">
-    <%= link_to "Donate", 'https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=qvVcyaS1ArquFuRmvu3aKnpBAO_gKWFqWf7OVOEpm0nxbae9iz0jk79gwKq&dispatch=5885d80a13c0db1f8e263663d3faee8dc3f308debf7330dd8d0b0a9f21afd7d3&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=4b9931a10b50917876870b81af4a88cf6a09c212', target: "blank", class: "btn-ghost" %>
-    <p class="bold">Donations keep us going!</p>
-    <p>We are a non-profit and any donation is much appreciated.</p>
-    <p>Your donation will be used in maintenance of</p>
-    <p>the website and improving experiences.</p>
-  </div>
+</div>
+<div class="copywrite">
+  <p>@<%= Time.current.year %> The Potluck Club. All Rights Reserved.</p>
 </div>
