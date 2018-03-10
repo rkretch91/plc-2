@@ -13,6 +13,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(events_params)
+    @user = User.find(params[:id])
+    @event.users << @user #technically known as host
     if @event.save
       redirect_to @event, notice: "Potluck Club event added to the system!"
     else
@@ -36,6 +38,12 @@ class EventsController < ApplicationController
 
     @event.destroy
     redirect_to events_path, notice: "Your Potluck Club event was deleted!"
+  end
+
+  def booking
+    @user = User.find(params[:id])
+    @event = Event.find(params[:event_id])
+    @user.events << @event
   end
 
   private
