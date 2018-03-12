@@ -1,2 +1,5 @@
 <h1>Events#show</h1>
 <p>Find me in app/views/events/show.html.erb</p>
+    <%= simple_form_for @event, url: booking_event_path(@event), method: :get do |i| %>
+        <%= i.button :submit, class: "btn btn-primary" %>
+    <% end %>
