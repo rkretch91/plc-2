@@ -13,6 +13,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(events_params)
+    @user = current_user
+    @event.users << @user #technically known as host
     if @event.save
       redirect_to @event, notice: "Potluck Club event added to the system!"
     else
@@ -36,6 +38,17 @@ class EventsController < ApplicationController
 
     @event.destroy
     redirect_to events_path, notice: "Your Potluck Club event was deleted!"
+  end
+
+  def booking
+    @user = current_user
+    @event = Event.find(params[:id])
+    if @user.events.includes(@event)
+      redirect_to @event, alert: "You have already booked this event"
+    else
+      @user.events << @event
+      redirect_to @event, notice: "Your name has been added to this Potluck Club event! You will receive more details over email soon."
+    end
   end
 
   private

@@ -1,2 +1,14 @@
-<h1>Events#new</h1>
-<p>Find me in app/views/events/new.html.erb</p>
+<div class="row forms">
+  <div class="col-xs-4 col-xs-offset-4">
+    <h1>add a new event!</h1>
+      <%= simple_form_for @event do |e| %>
+        <%= e.input :event_name, label: "Title of Event" %>
+        <%= e.input :description %>
+        <%= e.input :event_date, label: "Date of Event" %>
+        <%= e.input :event_time_start, label: "Start Time" %>
+        <%= e.input :event_time_end %>
+        <%= e.input :rsvp_limit %>
+        <%= e.button :submit, class:"btn-add" %>
+      <% end %>
+  </div>
+</div>
