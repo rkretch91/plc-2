@@ -12,7 +12,7 @@
       <!-- Links when logged in -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Join Us", "#", class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
+      <%= link_to "Join Us", events_path, class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
@@ -42,7 +42,7 @@
       <!-- Login link (when logged out) -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Join Us", "#", class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
+      <%= link_to "Join Us", events_path, class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
@@ -52,9 +52,9 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown" style="color: white;"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><%= link_to "Host", "#" %></li>
+        <li><%= link_to "About", "#" %></li>
+        <li> <%= link_to "Join Us", events_path %></li>
       </ul>
     </div>
   </div>
