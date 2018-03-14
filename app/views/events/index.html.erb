@@ -9,7 +9,7 @@
     <% @events.each do |event| %>
     <div class="col col-xs-12 col-sm-4">
       <%= link_to event_path(event), class: "card-link" do %>
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/plc-logo.png');">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('/assets/image-1.jpg');">
       <% end %>
         <div class="card-experience"><%= event.event_name %></div>
       </div>
