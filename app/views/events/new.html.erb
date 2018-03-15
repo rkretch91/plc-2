@@ -4,10 +4,10 @@
       <%= simple_form_for @event do |e| %>
         <%= e.input :event_name, label: "Title of Event" %>
         <%= e.input :description %>
-        <%= e.input :event_date, label: "Date of Event" %>
-        <%= e.input :event_time_start, label: "Start Time" %>
-        <%= e.input :event_time_end %>
+        <%= e.input :start_time, label: "Start Time/Date" %>
+        <%= e.input :end_time, label: "End Time/Date" %>
         <%= e.input :rsvp_limit %>
+        <%= e.file_field :photos, multiple: true %>
         <%= e.button :submit, class:"btn-add" %>
       <% end %>
   </div>

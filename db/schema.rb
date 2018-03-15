@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180313204703) do
+ActiveRecord::Schema.define(version: 20180315121339) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20180313204703) do
     t.string "city"
     t.time "start_time"
     t.time "end_time"
+    t.json "photos"
   end
 
   create_table "events_users", id: false, force: :cascade do |t|
