@@ -1,0 +1,168 @@
+.card {
+  height: 220px;
+  background-size: cover !important;
+  background-position: center;
+  color: $white;
+  border: solid 2px $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.card-experience {
+  border: solid 2px $white;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: auto auto;
+  padding: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+.card-city {
+  position: absolute;
+  bottom: 0px;
+  right: 40%;
+  color: #FF8400;
+}
+
+.cards-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.dashboard-card {
+  margin: 30px 0;
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.edit-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.booking-status {
+  text-align: center;
+  h3 {
+    font-weight: bold;
+    font-size: 22px;
+    color: $red;
+  }
+}
+
+.booking-date {
+  text-align: center;
+  line-height: 0.5em;
+  margin-top: 30px;
+  h3 {
+    font-weight: bold;
+    font-size: 14px;
+    color: $red;
+    margin-top: 0;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.greeter-choices {
+  text-align: center;
+  .btn {
+    padding: 10px 25px !important;
+  }
+}
+
+.state-icon {
+  .fa {
+    font-size: 50px;
+  }
+}
+
+
+.post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: #ffffff;
+  min-width: 270px;
+  height: 450px;
+}
+
+.thumbnail {
+  height: 350px;
+  overflow: hidden;
+  padding: 0px;
+  background: #f2f2f2;
+  border: none;
+
+  img {
+    display: block;
+    width: 120%;
+  }
+}
+
+.date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #FF8400;
+  width: 55px;
+  height: 55px;
+  padding: 12.5px 0;
+  border-radius: 100%;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 2.4vh;
+
+  .day {
+    font-size: 18px;
+  }
+  .month {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+.post-content {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  p {
+    text-align: center;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #58585b;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.row h3 {
+  text-align: center;
+}
