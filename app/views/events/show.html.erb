@@ -1,6 +1,21 @@
 <h1>Events#show</h1>
 <p>Find me in app/views/events/show.html.erb</p>
-    <%= cl_image_tag @event.photos, height: 300, width: 400, crop: :fill %>
+
+  <div class="card"
+    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+           url('<%= @event.photos? ? (cl_image_path @event.photos.first) : (image_path 'garnish-potatoes.jpeg') %>')">
+    <div class="card-category">Popular</div>
+    <div class="card-description">
+      <h2>Some stuff</h2>
+      <p>Very cool stuff, useful and smart</p>
+    </div>
+    <a class="card-link" href="#" ></a>
+  </div>
+
     <%= simple_form_for @event, url: booking_event_path(@event), method: :get do |i| %>
         <%= i.button :submit, class: "btn btn-primary" %>
     <% end %>
+
+
+<!-- experience.photos? ? (cl_image_path experience.photos.first.path) : (image_path 'museum.jpg') %>
+
