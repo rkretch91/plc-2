@@ -1,17 +1,21 @@
 // Specific CSS for your home-page
+body {
+  background-color: #f2f2f2;
+}
+
 .container {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .about-us {
   text-align: center;
   color: #909090;
   margin-top: 25px;
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 .how-to {
-  background-color: white;
+  background-color: #f2f2f2;
   height: 200px;
   display: flex;
   flex-direction: column;

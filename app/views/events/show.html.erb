@@ -9,12 +9,12 @@
       <h2>Some stuff</h2>
       <p>Very cool stuff, useful and smart</p>
     </div>
-    <a class="card-link" href="#" ></a>
   </div>
 
-    <%= simple_form_for @event, url: booking_event_path(@event), method: :get do |i| %>
+    <%= simple_form_for @event, url: booking_event_path(@event), method: :put do |i| %>
         <%= i.button :submit, class: "btn btn-primary" %>
     <% end %>
+
 
 
 <!-- experience.photos? ? (cl_image_path experience.photos.first.path) : (image_path 'museum.jpg') %>
