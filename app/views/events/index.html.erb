@@ -24,6 +24,7 @@
             <div class="post-content">
               <h4 class="title"><%= event.event_name %></h4>
               <p><i class="fas fa-map-marker-alt"></i> <%= event.city %></p>
+              <p><i class="fas fa-users"></i> <%= event.users.count == 1 ? event.users.count.to_s + " Potlucker Attending" : event.users.count.to_s + " Potluckers Attending" %></p>
   <!--           <div class="post-meta"><span class="timestamp"><i class="fa fa-facebook"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div> -->
             </div>
           <% end %>
@@ -52,6 +53,7 @@
             <div class="post-content">
               <h4 class="title"><%= event.event_name %></h4>
               <p><i class="fas fa-map-marker-alt"></i> <%= event.city %></p>
+             <p><i class="fas fa-users"></i> <%= event.users.count == 1 ? event.users.count.to_s + " Potlucker Attending" : event.users.count.to_s + " Potluckers Attending" %></p>
   <!--           <div class="post-meta"><span class="timestamp"><i class="fa fa-facebook"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div> -->
             </div>
           <% end %>
@@ -80,6 +82,7 @@
             <div class="post-content">
               <h4 class="title"><%= event.event_name %></h4>
               <p><i class="fas fa-map-marker-alt"></i> <%= event.city %></p>
+              <p><i class="fas fa-users"></i> <%= event.users.count == 1 ? event.users.count.to_s + " Potlucker Attending" : event.users.count.to_s + " Potluckers Attending" %></p>
   <!--           <div class="post-meta"><span class="timestamp"><i class="fa fa-facebook"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div> -->
             </div>
           <% end %>
