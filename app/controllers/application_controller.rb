@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
+  include Pundit
   protect_from_forgery with: :exception
-  # skip_before_action :authenticate_user!, only: :home
+  before_action :authenticate_user!, except: :home
 
   def home
   end
