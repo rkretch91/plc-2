@@ -43,12 +43,12 @@ class EventsController < ApplicationController
   def booking
     @user = current_user
     @event = Event.find(params[:id])
-    # if @user.events.includes(@event)
-    #   redirect_to @event, alert: "You have already booked this event"
-    # else
-    @event.users << @user
-    redirect_to event_path(@event), notice: "Your name has been added to this Potluck Club event! You will receive more details over email soon."
-    # end
+    if @event.users.include?(current_user)
+      redirect_to @event, alert: "You have already booked this event"
+    else
+      @event.users << @user
+      redirect_to event_path(@event), notice: "Your name has been added to this Potluck Club event! You will receive more details over email soon."
+    end
   end
 
   private

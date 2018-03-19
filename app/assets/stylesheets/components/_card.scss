@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 }
 .card-experience {
   border: solid 2px $white;
@@ -110,6 +109,7 @@
   padding: 0px;
   background: #f2f2f2;
   border: none;
+  margin-bottom: -25px;
 
   img {
     display: block;
@@ -148,6 +148,9 @@
   width: 100%;
   padding: 30px;
   box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
+  -moz-box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
+  box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
   background-color: #ffffff;
   p {
     text-align: center;
