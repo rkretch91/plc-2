@@ -5,16 +5,19 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    authorize @event
   end
 
   def new
     @event = Event.new
+    authorize @event
   end
 
   def create
     @event = Event.new(events_params)
     @user = current_user
     @event.users << @user #technically known as host
+    authorize @event
     if @event.save
       redirect_to @event, notice: "Potluck Club event added to the system!"
     else
