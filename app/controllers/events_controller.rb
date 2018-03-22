@@ -1,20 +1,23 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    @events = policy_scope(Event)
   end
 
   def show
     @event = Event.find(params[:id])
+    authorize @event
   end
 
   def new
     @event = Event.new
+    authorize @event
   end
 
   def create
     @event = Event.new(events_params)
     @user = current_user
     @event.users << @user #technically known as host
+    authorize @event
     if @event.save
       redirect_to @event, notice: "Potluck Club event added to the system!"
     else
@@ -24,18 +27,19 @@ class EventsController < ApplicationController
 
   def edit
     @event = Event.find(params[:id])
+    authorize @event
   end
 
   def update
     @event = Event.find(params[:id])
-
+    authorize @event
     @event.update(events_params)
     redirect_to @event, notice: "Your Potluck Club event was updated!"
   end
 
   def destroy
     @event = Event.find(params[:id])
-
+    authorize @event
     @event.destroy
     redirect_to events_path, notice: "Your Potluck Club event was deleted!"
   end
@@ -43,6 +47,7 @@ class EventsController < ApplicationController
   def booking
     @user = current_user
     @event = Event.find(params[:id])
+    authorize @event
     if @event.users.include?(current_user)
       redirect_to @event, alert: "You have already booked this event"
     else
@@ -54,7 +59,7 @@ class EventsController < ApplicationController
   private
 
   def events_params
-    params.require(:event).permit(:event_name, :description, :start_time, :end_time, :rsvp_limit, {photos: []})
+    params.require(:event).permit(:city, :event_name, :description, :date, :start_time, :end_time, :rsvp_limit, {photos: []})
   end
 end
 
