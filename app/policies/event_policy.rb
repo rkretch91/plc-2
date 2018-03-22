@@ -6,7 +6,7 @@ class EventPolicy < ApplicationPolicy
   end
 
   def new?
-    return true
+    user.admin
   end
 
   def create?
@@ -14,15 +14,15 @@ class EventPolicy < ApplicationPolicy
   end
 
   def edit?
-    record.users.first == user
+    record.users.first == user && user.admin
   end
 
   def update?
-    record.users.first == user
+    record.users.first == user && user.admin
   end
 
   def destroy?
-    record.users.first == user
+    record.users.first == user && user.admin
   end
 
   def booking?
