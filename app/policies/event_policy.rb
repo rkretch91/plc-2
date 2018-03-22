@@ -6,7 +6,7 @@ class EventPolicy < ApplicationPolicy
   end
 
   def new?
-    user.admin
+    check_if_admin
   end
 
   def create?
@@ -14,18 +14,32 @@ class EventPolicy < ApplicationPolicy
   end
 
   def edit?
-    record.users.first == user && user.admin
+    check_if_creator
   end
 
   def update?
-    record.users.first == user && user.admin
+    check_if_creator
   end
 
   def destroy?
-    record.users.first == user && user.admin
+    check_if_creator
   end
 
   def booking?
     return true
+  end
+
+  private
+
+  def check_if_creator
+    if user.nil? == false
+      record.users.first == user
+    end
+  end
+
+  def check_if_admin
+    if user.nil? == false
+      user.admin
+    end
   end
 end
