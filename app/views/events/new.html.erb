@@ -2,10 +2,12 @@
   <div class="col-xs-4 col-xs-offset-4">
     <h1>add a new event!</h1>
       <%= simple_form_for @event do |e| %>
+        <%= e.input :city, label: "City", collection: ["Berlin", "New York", "Shanghai"] %>
         <%= e.input :event_name, label: "Title of Event" %>
         <%= e.input :description %>
-        <%= e.input :start_time, label: "Start Time/Date" %>
-        <%= e.input :end_time, label: "End Time/Date" %>
+        <%= e.input :date, label: "Event Date" %>
+        <%= e.input :start_time, label: "Start Time" %>
+        <%= e.input :end_time, label: "End Time" %>
         <%= e.input :rsvp_limit %>
         <%= e.file_field :photos, multiple: true %>
         <%= e.button :submit, class:"btn-add" %>

@@ -24,6 +24,7 @@ event_attributes = [
     {
     event_name: "Potluck at Ed's",
     description:  "A unique experience at la casa del Ed!",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
@@ -32,6 +33,7 @@ event_attributes = [
   {
     event_name: "Sunday Morn Brunch",
     description:  "A beautiful brunch at Marge's in East Village",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
@@ -40,6 +42,7 @@ event_attributes = [
   {
     event_name: "Potluck Charity Event",
     description:  "BYOF and Ideas",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
@@ -48,6 +51,7 @@ event_attributes = [
   {
     event_name: "Happy Friendsgiving",
     description:  "Thanksgiving for those who are living a home away from home",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
@@ -57,6 +61,7 @@ event_attributes = [
   {
     event_name: "Amazing, delicious Potluck Breakfast",
     description:  "Gonna be a good one!",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
@@ -65,6 +70,7 @@ event_attributes = [
   {
     event_name: "International Themed Brunch",
     description:  "And international festivity for everyone!",
+    date: Faker::Date.forward(23),
     start_time: Faker::Time.between(2.days.ago, Date.today, :all),
     end_time: Faker::Time.between(2.days.ago, Date.today, :all),
     rsvp_limit: rand(15..35),
