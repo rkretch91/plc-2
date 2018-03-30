@@ -1,0 +1,55 @@
+.event-info-card {
+  background: white;
+  position: relative;
+  text-align: center;
+  z-index: 1000;
+  display: block;
+  top: -8em;
+  height: 400px;
+  -webkit-box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
+  -moz-box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
+  box-shadow: 4px 4px 21px -4px rgba(0,0,0,0.43);
+  color: #58585b;
+  h3 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  h6 {
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.date-show {
+  z-index: 1;
+  background: #FF8400;
+  width: 60px;
+  height: 60px;
+  padding: 12.5px 0;
+  border-radius: 100%;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 2.4vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .day {
+    font-size: 18px;
+  }
+  .month {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+.container-shortened {
+  height: 300px;
+}
+
+// .event-details {
+//   border-right: 1px solid black;
+// }
