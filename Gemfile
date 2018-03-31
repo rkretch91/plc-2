@@ -9,6 +9,7 @@ gem 'rails', '5.1.5'
 gem 'redis'
 gem 'faker'
 gem 'pundit'
+gem 'rails_12factor', group: :production
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
