@@ -18,13 +18,18 @@
           <div class="col-xs-12 col-md-6">
             <div class="event-details">
               <p><i class="fas fa-map-marker-alt"></i> A secret location in <%= @event.city %>*</p>
-              <h6>*The exact address will be posted here and emailed to participants one week before.</h6>
+              <p><i class="fas fa-calendar-alt"></i> <%= @event.date.strftime("%A, %B %-d") %></p>
+              <p><i class="fas fa-clock"></i> <%= @event.start_time.strftime("%H:%M").to_s + " to " + @event.end_time.strftime("%H:%M").to_s %></p>
+              <p><i class="fas fa-users"></i> <%= @event.users.count == 1 ? @event.users.count.to_s + " Potlucker Attending" : @event.users.count.to_s + " Potluckers Attending" %></p>
             </div>
+            <hr width="90%">
           </div>
           <div class="col-xs-12 col-md-6"">
+            <h6 style="color: #FF8400">Rules: Hit the button below and one week before the event to save your spot, you will be asked to confirm your attendance and what dish you will bring.</h6>
             <%= simple_form_for @event, url: booking_event_path(@event), method: :put do |i| %>
-              <%= i.button :submit, value: "Attend!", class: "btn-lg btn-primary round-corner" %>
+              <%= i.button :submit, value: "Attend!", class: "btn-lg btn-primary round-corner", style: "margin: 20px 0px;" %>
             <% end %>
+            <h6>*<em>The exact address will be posted here and emailed to participants one week before.</em></h6>
           </div>
         </div>
       </div>

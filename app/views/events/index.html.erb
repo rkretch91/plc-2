@@ -30,13 +30,13 @@
           <% end %>
           <!-- Post Content-->
           </div>
-        </div>
       <% if policy(event).edit? %>
         <%= link_to "Update", edit_event_path(event) %>
       <% end %>
       <% if policy(event).destroy? %>
         <%= link_to "Destroy", event, method: :delete, data: {confirm: 'Are you sure you want to delete this event?'} %>
       <% end %>
+        </div>
       <% end %>
     <% end %>
   </div>
