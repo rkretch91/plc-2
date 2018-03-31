@@ -1,21 +1,23 @@
 // Specific CSS for your home-page
 body {
-  background-color: #f2f2f2;
+  background-image: url("background-1.jpg");
+  background-size: 500px;
 }
 
 .container {
-  background-color: #f2f2f2;
+
 }
 
 .about-us {
   text-align: center;
   color: #58585b;
   margin-top: 25px;
-  background-color: #f2f2f2;
+  // background-image: url("background-1.jpg");
+  // background-size: 700px;
+
 }
 
 .how-to {
-  background-color: #f2f2f2;
   height: 350px;
   display: flex;
   flex-direction: column;
