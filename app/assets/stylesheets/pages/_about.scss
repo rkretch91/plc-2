@@ -19,13 +19,27 @@
   margin-top: 50px;
 }
 
-.container-about-page .how-to {
+.container-about-page .mission-icon-cols {
   height: 350px;
   display: flex;
   flex-direction: column;
   /* margin: 30px 0px 10px 0px; */
   align-items: center;
   justify-content: center;
+}
+
+.mission-icon-cols {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 10px 0px;
+  align-items: center;
+  justify-content: end;
+  img {
+    height: 250px;
+    margin: 20px;
+  }
+  padding-bottom: 20px;
 }
 
 
