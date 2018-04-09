@@ -3,7 +3,9 @@
     <div class="banner-content">
       <h1>Breaking down social and cultural barriers through food</h1>
       <p><em>Community-driven food events</em></p>
-      <%= link_to "Join Us", events_path, class: "btn btn-primary btn-lg round-corner" %>
+      <%= link_to events_path do %>
+        <h3 class="btn btn-primary btn-lg round-corner">Join Us <i class="fas fa-utensil-spoon"></i></h3>
+      <% end %>
     </div>
   </div>
 
@@ -65,6 +67,8 @@
 <div class="call-to-action">
   <div class="call-to-action-content">
     <h3><strong>Attend a potluck near you.</strong></h3>
-    <%= link_to "Join Us", events_path, class: "btn btn-success btn-lg round-corner" %>
+    <%= link_to events_path do %>
+      <h3 class="btn btn-success btn-lg round-corner" style="color: #FFB200;">Join Us <i class="fas fa-utensils"></i></h3>
+    <% end %>
   </div>
 </div>
