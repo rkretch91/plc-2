@@ -22,3 +22,17 @@
   opacity: 0.8;
   margin-bottom: 30px;
 }
+
+.parallax {
+    /* The image used */
+    background-image: image-url("food-salad-dinner-eating-lite.jpg");
+
+    /* Set a specific height */
+    // height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: cover;
+}
