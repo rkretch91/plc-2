@@ -1,0 +1,35 @@
+.about-banner {
+  color: white;
+  text-align: left;
+  height: 450px;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: flex-end;
+  margin-top: -115px;
+}
+
+.about-banner h1 {
+  margin-left: 50px;
+}
+
+.container-about-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-about-page .how-to {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 30px 0px 10px 0px; */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.our-story-text {
+  width: 80vw;
+}
+
