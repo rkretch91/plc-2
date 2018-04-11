@@ -19,21 +19,22 @@
   margin-top: 50px;
 }
 
-.container-about-page .mission-icon-cols {
-  height: 350px;
+.mission-icon-cols {
+  height: 200px;
   display: flex;
   flex-direction: column;
-  /* margin: 30px 0px 10px 0px; */
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  img {
+    height: 250px;
+  }
 }
 
-.mission-icon-cols {
-  height: 350px;
+.mission-icon-text {
   display: flex;
   flex-direction: column;
   margin: 30px 0px 10px 0px;
-  align-items: center;
+  align-items: top;
   justify-content: end;
   img {
     height: 250px;
@@ -47,3 +48,12 @@
   width: 80vw;
 }
 
+.extra-padding {
+  margin-top: 25px;
+
+}
+.container-about-page.our-team img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
