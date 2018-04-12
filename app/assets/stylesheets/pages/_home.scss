@@ -45,3 +45,20 @@ body {
     color: #FFb200;
   }
 }
+
+.call-to-action-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: image-url("background-1.jpg") !important;
+  background-size: 500px;
+  height: 100px;
+  h3 {
+    color: #58585b;
+  }
+  a {
+    color: #58585b;
+    text-decoration: none;
+  }
+}
