@@ -11,7 +11,7 @@
 
       <!-- Links when logged in -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "About", pages_about_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Join Us", events_path, class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
 
       <!-- Avatar with dropdown menu -->
@@ -41,7 +41,7 @@
     <% else %>
       <!-- Login link (when logged out) -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Join Us", events_path, class: "navbar-wagon-item btn btn-primary btn-sm", style: "border-radius:5px; padding-left: 8px; padding-right: 8px;" %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
