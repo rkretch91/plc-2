@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
   root to: 'pages#home'
 
-  get 'pages/about'
+  get '/about', to: 'pages#about'
   # get '/about', :to => redirect('/about.html')
   # get 'pages/about', :to => 'about_page'
 
