@@ -11,22 +11,22 @@
   <div class="footer-links hidden-xs">
     <div class="footer-addt-links">
       <h5>Learn More</h5>
-      <p>About Us</p>
+      <p><%= link_to "About", about_path %></p>
       <p>FAQ</p>
     </div>
     <div class="footer-addt-links">
       <h5>Get Involved</h5>
-      <p>Attend</p>
+      <p><%= link_to "Attend", events_path %></p>
       <p><%= link_to "Host", "https://www.wenjuan.in/s/YvmMJjv/", target: :_blank %></p>
       <p>Careers</p>
       <p>Contact Us</p>
     </div>
     <div class="footer-addt-links">
       <h5>Discover</h5>
-      <p>Events</p>
+      <p><%= link_to "Events", events_path %></p>
       <div class="social-icons">
         <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/thepotluckclubofficial/" style ="color: #FFB200;"><i class="fab fa-instagram"></i></a>
         <i class="fab fa-twitter"></i>
       </div>
     </div>
