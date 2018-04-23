@@ -12,6 +12,8 @@ gem 'pundit'
 gem 'rails_12factor', group: :production
 
 gem 'autoprefixer-rails'
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'sass-rails'

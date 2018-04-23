@@ -5,10 +5,10 @@
         <%= e.input :city, label: "City", collection: ["Berlin", "New York", "Shanghai"] %>
         <%= e.input :event_name, label: "Title of Event" %>
         <%= e.input :description %>
-        <%= e.input :date, label: "Event Date" %>
-        <%= e.input :start_time, label: "Start Time" %>
-        <%= e.input :end_time, label: "End Time" %>
-        <%= e.input :rsvp_limit %>
+        <%= e.input :date, label: "Event Date", as: :date_picker %>
+        <%= e.input :start_time, label: "Start Time", as: :time_picker %>
+        <%= e.input :end_time, label: "End Time", as: :time_picker %>
+        <%= e.input :rsvp_limit, as: :integer %>
         <%= e.file_field :photos, multiple: true %>
         <%= e.button :submit, class:"btn-add" %>
       <% end %>
