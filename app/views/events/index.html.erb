@@ -30,12 +30,6 @@
           <% end %>
           <!-- Post Content-->
           </div>
-      <% if policy(event).edit? %>
-        <%= link_to "Update", edit_event_path(event) %>
-      <% end %>
-      <% if policy(event).destroy? %>
-        <%= link_to "Destroy", event, method: :delete, data: {confirm: 'Are you sure you want to delete this event?'} %>
-      <% end %>
         </div>
       <% end %>
     <% end %>
@@ -66,12 +60,6 @@
           <!-- Post Content-->
           </div>
         </div>
-      <% if policy(event).edit? %>
-        <%= link_to "Update", edit_event_path(event) %>
-      <% end %>
-      <% if policy(event).destroy? %>
-        <%= link_to "Destroy", event, method: :delete, data: {confirm: 'Are you sure you want to delete this event?'} %>
-      <% end %>
       <% end %>
     <% end %>
   </div>
@@ -101,21 +89,18 @@
           <!-- Post Content-->
           </div>
         </div>
-      <% if policy(event).edit? %>
-        <%= link_to "Update", edit_event_path(event) %>
-      <% end %>
-      <% if policy(event).destroy? %>
-        <%= link_to "Delete", event, method: :delete, data: {confirm: 'Are you sure you want to delete this event?'} %>
-      <% end %>
       <% end %>
     <% end %>
   </div>
 </div>
 
-      <% if policy(Event).new? %>
-        <%= link_to "New Restaurant", new_event_path %>
-      <% end %>
-
+    <% if policy(Event).new? %>
+      <div class="new-event">
+        <div class="call-to-action-content">
+            <%= link_to "New Potluck Event", new_event_path %>
+        </div>
+      </div>
+    <% end %>
 
 <div class="call-to-action">
   <div class="call-to-action-content">

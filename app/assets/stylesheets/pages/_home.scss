@@ -62,3 +62,19 @@ body {
     text-decoration: none;
   }
 }
+
+.new-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 100px;
+  h3 {
+    color: #FFb200;
+  }
+  a {
+    color: #FFb200;
+  }
+
+}
