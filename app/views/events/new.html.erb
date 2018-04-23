@@ -1,16 +1,27 @@
-<div class="row forms">
-  <div class="col-xs-4 col-xs-offset-4">
-    <h1>add a new event!</h1>
-      <%= simple_form_for @event do |e| %>
-        <%= e.input :city, label: "City", collection: ["Berlin", "New York", "Shanghai"] %>
-        <%= e.input :event_name, label: "Title of Event" %>
-        <%= e.input :description %>
-        <%= e.input :date, label: "Event Date", as: :date_picker %>
-        <%= e.input :start_time, label: "Start Time", as: :time_picker %>
-        <%= e.input :end_time, label: "End Time", as: :time_picker %>
-        <%= e.input :rsvp_limit, as: :integer %>
-        <%= e.file_field :photos, multiple: true %>
-        <%= e.button :submit, class:"btn-add" %>
-      <% end %>
+<div class="page-background-new" style="background-image: url('<%= image_path "background-1.jpg" %>'); background-size: cover;">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+      <div class="login">
+        <div class="form-header">
+          <h2>Add a Potluck!</h2>
+        </div>
+        <div class="form">
+          <%= simple_form_for @event do |e| %>
+            <%= e.input :city, label: "City", collection: ["Berlin", "New York", "Shanghai"] %>
+            <%= e.input :event_name, label: "Title of Event" %>
+            <%= e.input :description, placeholder: 'What type of Potluck is it? What should people bring? Who would be interested in this event?' %>
+            <%= e.input :date, label: "Event Date", as: :date_picker %>
+            <%= e.input :start_time, label: "Start Time", as: :time_picker %>
+            <%= e.input :end_time, label: "End Time", as: :time_picker %>
+            <%= e.input :rsvp_limit, as: :integer %>
+            <h5>Add a Main Photo</h5>
+            <%= e.file_field :photos, multiple: true %>
+           </div>
+           <div class="form-actions">
+            <%= e.button :submit, class:"btn-add" %>
+           </div>
+          <% end %>
+      </div>
+    </div>
   </div>
 </div>
