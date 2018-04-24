@@ -10,6 +10,7 @@ gem 'redis'
 gem 'faker'
 gem 'pundit'
 gem 'rails_12factor', group: :production
+gem 'administrate'
 
 gem 'autoprefixer-rails'
 gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
