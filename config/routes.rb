@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+    # resources :cities
+    resources :events
+
+    root to: "events#index"
+  end
+
   devise_for :users,
     controllers: {omniauth_callbacks: 'users/omniauth_callbacks'}
   root to: 'pages#home'
