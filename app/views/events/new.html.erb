@@ -9,6 +9,7 @@
           <%= simple_form_for @event do |e| %>
             <%= e.input :city, label: "City", collection: ["Berlin", "New York", "Shanghai"] %>
             <%= e.input :event_name, label: "Title of Event" %>
+            <%= e.input :address %>
             <%= e.input :description, placeholder: 'What type of Potluck is it? What should people bring? Who would be interested in this event?' %>
             <%= e.input :date, label: "Event Date", as: :date_picker %>
             <%= e.input :start_time, label: "Start Time", as: :time_picker %>
