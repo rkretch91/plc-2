@@ -54,6 +54,7 @@ class EventsController < ApplicationController
       redirect_to @event, alert: "You have already booked this event"
     else
       @event.users << @user
+      EventMailer.booking_confirmation(@event).deliver_now
       redirect_to event_path(@event), notice: "Your name has been added to this Potluck Club event! You will receive more details over email soon."
     end
   end
