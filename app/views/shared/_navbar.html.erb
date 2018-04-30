@@ -17,7 +17,7 @@
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <% avatar_url = current_user.facebook_picture_url || "http://placehold.it/30x30" %>
+          <% avatar_url = current_user.facebook_picture_url || ["http://res.cloudinary.com/dofuzeof4/image/upload/v1525094872/food-03_o67stj.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525094872/food-04_pxduus.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525094872/food-01_quj8uz.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525094872/food-02_joxwkg.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525095205/food-05_jqdgbj.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525095205/food-06_v7wq67.png", "http://res.cloudinary.com/dofuzeof4/image/upload/v1525095205/food-07_qnilxs.png"].sample %>
           <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
