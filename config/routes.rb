@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   # get '/about', :to => redirect('/about.html')
   # get 'pages/about', :to => 'about_page'
+  get '/faq', to: 'pages#faq'
 
   resources :events do
     member do
