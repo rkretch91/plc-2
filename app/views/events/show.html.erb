@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-6">
             <div class="event-details">
-              <p><i class="fas fa-map-marker-alt"></i>A secret location in <%= @event.city %>*</p>
+              <p><i class="fas fa-map-marker-alt"></i> A secret location in <%= @event.city %>*</p>
               <p><i class="fas fa-calendar-alt"></i> <%= @event.date.strftime("%A, %B %-d") %></p>
               <p><i class="fas fa-clock"></i> <%= @event.start_time.strftime("%H:%M").to_s + " to " + @event.end_time.strftime("%H:%M").to_s %></p>
               <p><i class="fas fa-users"></i> <%= @event.users.count == 1 ? @event.users.count.to_s + " Potlucker Attending" : @event.users.count.to_s + " Potluckers Attending" %></p>
