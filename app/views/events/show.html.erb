@@ -30,6 +30,8 @@
               <%= i.button :submit, value: "Attend!", class: "btn-lg btn-primary round-corner", style: "margin: 20px 0px;" %>
             <% end %>
             <h6>*<em>The exact address will be posted here and emailed to participants one week before.</em></h6>
+            </br>
+            <%= social_share_button_tag('Share to Facebook', :url => event_path(@event), desc: @event.event_name) %>
               <% if policy(@event).edit? %>
                 <%= link_to "Update", edit_event_path(@event) %>
               <% end %>

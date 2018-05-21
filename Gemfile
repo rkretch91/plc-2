@@ -28,6 +28,7 @@ gem 'cloudinary'
 gem 'jquery-rails'
 gem 'jquery-fileupload-rails'
 gem 'letter_opener', group: :development
+gem 'social-share-button'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
